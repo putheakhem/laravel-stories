@@ -18,3 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*
+/
+/  applicaiton route
+/
+*/
+
+Route::get('/stories', function () {
+  return ('All Stories is Here');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
