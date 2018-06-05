@@ -25,10 +25,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 /
 */
 
-Route::get('/stories', function () {
-  return ('All Stories is Here');
-});
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/backend', 'BackendController@index')->name('backend');
